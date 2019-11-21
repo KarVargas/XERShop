@@ -16,20 +16,20 @@
 		</div>
 	</header>
 	<div class="centrar-form">
-		<form action="add.php" method="get" target="_self" onsubmit="return validar();" autocomplete="off">
+		<form action="agregar.php" method="get" target="_self" onsubmit="return validar();" autocomplete="off">
 			<div class="box-inner">
 				<p class="">Registrar una nueva cuenta</p>
 				<div>
 					<label>Nombre</label>
-					<input id="UserEmail" type="text">
+					<input id="UserEmail" name="nombre_usuario" type="text">
 				</div>
 				<div>
 					<label>Correo</label>
-					<input id="UserEmail" type="email">
+					<input id="UserEmail" name="correo" type="email">
 				</div>
 				<div>
 					<label>Contraseña</label>
-					<input TYPE="password" id="UserPass">
+					<input TYPE="password" name="contraseña" id="UserPass">
 				</div>
 				<div>
 					<label>Confirmar Contraseña</label>
