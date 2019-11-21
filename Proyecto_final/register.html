@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Registro de XER</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header-nav">
+		<a href="index.html"><img src="img/logo.png" alt="Logotipo"></a>
+		<div class="navh">
+			<a href="#">Nosotros</a> |
+			<a href="login.html">Login</a>
+		</div>
+	</header>
+	<div class="centrar-form">
+		<form action="agregar.php" method="get" target="_self" onsubmit="return validar();" autocomplete="off">
+			<div class="box-inner">
+				<p class="">Registrar una nueva cuenta</p>
+				<div>
+					<label>Nombre</label>
+					<input id="UserEmail" name="nombre_usuario" type="text">
+				</div>
+				<div>
+					<label>Correo</label>
+					<input id="UserEmail" name="correo" type="email">
+				</div>
+				<div>
+					<label>Contraseña</label>
+					<input TYPE="password" name="contraseña" id="UserPass">
+				</div>
+				<div>
+					<label>Confirmar Contraseña</label>
+					<input TYPE="password" id="UserPass">
+				</div>
+				<div>
+					<a href="login.html">Ya eres miembro?</a>
+				</div>
+				<div>
+					<input type="submit" value="Registrarse" class="boton">
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

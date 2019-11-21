@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>LogIn</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header-nav">
+		<a href="index.html"><img src="img/logo.png" alt="Logotipo"></a>
+		<div class="navh">
+			<a href="#">Nosotros</a> |
+			<a href="login.html">Login</a>
+		</div>
+	</header>
+	<form action="homee.html" method="" autocomplete="off" class="full-box logInForm">
+		<p class="text-center text-muted"><i class="zmdi zmdi-account-circle zmdi-hc-5x"></i></p>
+		<p class="text-center text-muted text-uppercase">Iniciar sesión en la cuenta</p>
+        <!--<p class="text-center text-muted text-uppercase">Login to your account</p>-->
+		<div class="form-group label-floating">
+		  <label class="control-label" for="UserEmail">Correo</label>
+          <!--<label class="control-label" for="UserEmail">E-mail</label>-->
+		  <input class="form-control" id="UserEmail" type="email">
+		  <!--<p class="help-block">Escribe tú E-mail</p>-->
+		</div>
+		<div class="form-group label-floating">
+		  <label class="control-label" for="UserPass">Contraseña</label>
+            <!--<label class="control-label" for="UserPass">Password</label>-->
+		  <input class="form-control" TYPE="password" id="UserPass">
+		  <!--<p class="help-block">Escribe tú contraseña</p>-->
+		</div>
+        <div>
+            <!--<a>Forgot Password</a>
+            <label>or</label>-->
+            <a href="register.html">Registrarse</a>
+            <!--<a href="register.html">Register</a>-->
+        </div>
+		<div class="form-group text-center">
+			<!--<input type="submit" value="Login" class="btn btn-raised btn-danger">-->
+            <input type="submit" value="Iniciar Sesión" class="btn btn-raised btn-danger">
+		</div>
+	</form>
+</body>
+</html>
