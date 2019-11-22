@@ -1,0 +1,114 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    height: 100%;
+}
+header.header-nav {
+    text-align: center;
+    padding: 20px 0;
+    color: #FFF;
+    background-color: #00214D;
+    display: flex;  
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+img {
+    max-width: 100%;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: #009688;
+}
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero {
+    margin-bottom: 40px;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+input {
+    margin-bottom: 10px;
+}
+.box-inner {
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.centrar-form {
+    width: 250px;
+    margin: 0 auto;
+}
+.lista-productos {
+    padding: 0;
+    list-style: none;
+}
+.lista-productos li {
+    float: left;
+    width: 50%;
+    padding: 0px;
+    text-align: center;
+}
+/** 2(0) + 1 **/
+.lista-productos li:nth-child(2n+1) {
+    clear: both;
+}
+@media (min-width: 768px) {
+    .lista-productos li {
+        width: calc(100% / 3);
+    }
+    .lista-productos li:nth-child(2n+1) {
+        clear: unset;
+    }
+    .lista-productos li:nth-child(3n+1) {
+        clear: both;
+    }
+}
+/*
+.lista-productos li img {
+    border: 10px solid rgba(1, 195, 1, 0.45);
+    transition: border-color .3s ease-in-out;
+}*/
+.lista-productos li img:hover {
+    border: 10px solid rgba(1, 195, 1, 1);
+    cursor: pointer;
+}
+.lista-productos li p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+span.precio {
+    color: #ffce00;
+    font-size: 40px;
+}
+.boton {
+    background-color: #ffcc00ad;
+    padding: 10px 40px;
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #7f01c3b2;
+    border-radius: 30px;
+    transition: background-color .3s ease-in-out;
+}
+.boton:hover {
+    background-color: #ffce00;
+    color: #8001c3;
+}
