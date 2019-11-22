@@ -2,15 +2,13 @@
 include "conexion.php";
 
 echo<<<HTML
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+HTML;
+include "head_web.php";
+echo<<<HTML
     <title>XER Shop</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <script>
+    <!-- <script>
         function mostrar_datos(nombre) {
             if(nombre.length == 0) {
                 document.getElementById("sugerencias").innerHTML="";
@@ -25,7 +23,7 @@ echo<<<HTML
             xmlhttp.open("GET", "nombres.php?nombre="+nombre, true);
             xmlhttp.send();
         }
-    </script>
+    </script> -->
 </head>
 <body>
 HTML;

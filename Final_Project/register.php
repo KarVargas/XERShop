@@ -2,11 +2,10 @@
 echo<<<HTML
 <html>
 <head>
+HTML;
+include "head_web.php";
+echo<<<HTML
 	<title>Registro de XER</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/estilos.css">
 	<script>
 		function validar() {
 			pass=document.getElementById("UserPass").value;
@@ -23,27 +22,27 @@ HTML;
 include "header_nav.php";
 echo<<<HTML
 	<div class="centrar-form">
-		<form action="agregar.php" method="get" target="_self" onsubmit="return validar();" autocomplete="off">
+		<form action="add.php" method="get" target="_self" onsubmit="return validar();">
 			<div class="box-inner">
 				<p class="">Registrar una nueva cuenta</p>
 				<div>
 					<label>Nombre</label>
-					<input id="UserName" name="nombre_usuario" type="text" required>
+					<input type="text" name="username">
 				</div>
 				<div>
 					<label>Correo</label>
-					<input id="UserEmail" name="correo" type="email" required>
+					<input type="email" name="useremail">
 				</div>
 				<div>
 					<label>Contraseña</label>
-					<input TYPE="password" name="contraseña" id="UserPass" required>
+					<input type="password" name="userpassword">
 				</div>
 				<div>
 					<label>Confirmar Contraseña</label>
-					<input TYPE="password" id="ConfUserPass" required>
+					<input type="password" name="userpassword_r">
 				</div>
 				<div>
-					<a href="login.html">Ya eres miembro?</a>
+					<a href="login.php">Ya eres miembro?</a>
 				</div>
 				<div>
 					<input type="submit" value="Registrarse" class="boton">

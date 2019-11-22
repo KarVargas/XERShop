@@ -11,21 +11,21 @@ echo<<<HTML
 HTML;
 include "header_nav.php";
 echo<<<HTML
-	<form action="validar.php" method="post" autocomplete="off">
+	<form action="validar.php" method="post">
 		<p class="text-center text-muted text-uppercase">Iniciar sesión en la cuenta</p>
 		<div>
 		  <label>Correo</label>
-		  <input id="UserEmail" type="email" name="username">
+		  <input type="email" name="vemail">
 		</div>
 		<div>
 		  <label>Contraseña</label>
-		  <input TYPE="password" id="UserPass" name="password">
+		  <input type="password" name="vpassword">
 		</div>
         <div>
             <a href="register.php">Registrarse</a>
         </div>
 		<div class="form-group text-center">
-            <input type="submit" value="Iniciar Sesión" class="btn btn-raised btn-danger">
+            <input type="submit" value="Iniciar Sesión" class="boton">
 		</div>
 	</form>
 </body>
