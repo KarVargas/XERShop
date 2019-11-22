@@ -2,26 +2,24 @@
 echo<<<HTML
 <html>
 <head>
-	<link rel="shortcut icon" type="image/x-icon" href="img/ilogos.png" />
+HTML;
+include "head_web.php";
+echo<<<HTML
 	<title>LogIn</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 HTML;
 include "header_nav.php";
 echo<<<HTML
-	<form action="homee.html" method="get" autocomplete="off">
+	<form action="validar.php" method="post" autocomplete="off">
 		<p class="text-center text-muted text-uppercase">Iniciar sesión en la cuenta</p>
 		<div>
 		  <label>Correo</label>
-		  <input id="UserEmail" type="email">
+		  <input id="UserEmail" type="email" name="username">
 		</div>
 		<div>
 		  <label>Contraseña</label>
-		  <input TYPE="password" id="UserPass">
+		  <input TYPE="password" id="UserPass" name="password">
 		</div>
         <div>
             <a href="register.php">Registrarse</a>
